@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fahrenheit to Celsius</title>
+    <style type="text/css">
+    	
+    </style>
+	<script type="text/javascript">
+		var com="";
+
+		 
+         function convert() {
+		 	var x=document.getElementById('input1').value*1.8+32;
+		 	document.getElementById('input2').value=x;
+            alert('');
+		 }
+		  function con() {
+		 	var x=document.getElementById('input2').value/1.8 - 32/1.8;
+		 	document.getElementById('input1').value=x;
+		 }
+		 
+	</script>
+	<style type="text/css">
+	#if{color: white;}
+	</style>
+</head>
+<body>
+    
+    <fieldset style="width:50%;margin-top:30px;margin-left:150px;background-color:blue;color:red">
+
+    	 <legend style="color:white">Temperature converter</legend>
+    <table>
+     <tr><td id="if">Converter Celsius to Fahrenheit&Fahrenheit to Celsius</td></tr>
+    	<tr>
+    	<tr>
+    	<td>Cel:</td>
+    		<td><input id="input1" type="text" name="" oninput="convert()" placeholder="Enter Celsius"></td>
+    		
+    	</tr>
+    	<tr>
+    	<td>Fah:</td>
+    		<td><input id="input2" type="text" name="" oninput="con()" placeholder="Enter Fahrenheit"></td>
+    	</tr>
+    	
+    </table>
+    </fieldset>
+      
+</body>
+</html>
